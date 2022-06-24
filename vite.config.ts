@@ -6,9 +6,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: "./src/index.ts",
-      name: "ReactSlots",
+      name: "ReactTypedSlots",
       formats: ["es", "cjs"],
-      fileName: (format) => `react-slots.${format}.js`,
+      fileName: (format) => `react-typed-slots.${format}.js`,
     },
     rollupOptions: {
       external: ["react"],

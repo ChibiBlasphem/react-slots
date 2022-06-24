@@ -1,8 +1,18 @@
 {
-  "name": "react-slots",
-  "version": "0.0.0",
+  "name": "react-typed-slots",
+  "version": "0.1.0",
+  "license": "MIT",
+  "files": ["dist"],
+  "types": "./dist/index.d.ts",
+  "main": "./dist/react-typed-slots.cjs.js",
+  "module": "./dist/react-typed-slots.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/react-typed-slots.es.js",
+      "require": "./dist/react-typed-slots.cjs.js"
+    }
+  },
   "scripts": {
-    "dev": "vite",
     "build": "tsc --noEmit && vite build && tsc --emitDeclarationOnly",
     "test": "vitest run",
     "test:watch": "vitest",
